@@ -2,6 +2,11 @@ on:
   push:
     branches:
       - master
+
+defaults:
+  run:
+    working-directory: ./AwesomeProject
+
 jobs:
   build:
     runs-on: ubuntu-latest
