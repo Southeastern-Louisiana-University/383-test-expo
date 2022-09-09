@@ -9,8 +9,9 @@ jobs:
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v2
-        with:
-          path: './AwesomeProject'
+        
+      - name: 🏗 Change Directory
+        run: cd ./AwesomeProject
 
       - name: 🏗 Setup Node
         uses: actions/setup-node@v2
