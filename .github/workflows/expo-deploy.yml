@@ -6,12 +6,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest    
-    defaults:
-      run:
-        working-directory: ./AwesomeProject
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v2
+        with:
+          path: './AwesomeProject'
 
       - name: 🏗 Setup Node
         uses: actions/setup-node@v2
