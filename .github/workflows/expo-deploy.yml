@@ -24,6 +24,7 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
           project: AwesomeProject
+          packager: npm
 
       - name: 📦 Install dependencies
         run: npm install
