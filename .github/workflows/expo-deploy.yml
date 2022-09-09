@@ -30,4 +30,4 @@ jobs:
         run: npm install ./AwesomeProject
 
       - name: 🚀 Build app
-        run: cd ./AwesomeProject/ && eas build --non-interactive
+        run: cd ./AwesomeProject/ && eas build -p android --non-interactive
